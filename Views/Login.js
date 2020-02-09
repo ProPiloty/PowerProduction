@@ -3,15 +3,15 @@ import {
   StyleSheet,
   View,
   Text,
-  TextInput,
   Button,
 } from 'react-native';
 
 import Header from '../Components/Header';
+import LoginForm from '../Components/LoginForm';
 
 const Login = ({navigation}) => {
 
-  const loginUser = () => {
+  const loginUser = (user) => {
     return navigation.navigate('Dashboard');
   }
 
@@ -19,9 +19,7 @@ const Login = ({navigation}) => {
     <View style={styles.login} >
       <Header />
       <Text>Login</Text>
-      <TextInput placeholder="Username/Email" />
-      <TextInput placeholder="Password" />
-      <Button title="Log In" onPress={loginUser()} />
+      <LoginForm loginUser={loginUser} />
       <Button title="Register" onPress={() => navigation.navigate('Register')} />
       <Button title="Go to Home" onPress={() => navigation.navigate('Home')} />
     </View>

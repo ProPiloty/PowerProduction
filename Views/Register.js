@@ -3,11 +3,11 @@ import {
   StyleSheet,
   View,
   Text,
-  TextInput,
   Button,
 } from 'react-native';
 
 import Header from '../Components/Header';
+import RegisterForm from '../Components/RegisterForm';
 
 const Register = ({navigation}) => {
 
@@ -19,10 +19,7 @@ const Register = ({navigation}) => {
     <View style={styles.register} >
       <Header />
       <Text>Register</Text>
-      <TextInput placeholder="Username/Email" />
-      <TextInput placeholder="Password" />
-      <TextInput placeholder="Password" />
-      <Button title="Register" onPress={registerUser()} />
+      <RegisterForm registerUser={registerUser} />
       <Button title="Login" onPress={() => navigation.navigate('Login')} />
       <Button title="Go to Home" onPress={() => navigation.navigate('Home')} />
     </View>
