@@ -14,7 +14,8 @@ const Home = ({navigation}) => {
       <Header />
       <Text>A productivity app for the future.</Text>
       <Text>Manage your life, career, hobbies, and more.</Text>
-      <Button title="Go to Auth" onPress={() => navigation.navigate('Auth')} />
+      <Button title="Login" onPress={() => navigation.navigate('Login')} />
+      <Button title="Register" onPress={() => navigation.navigate('Register')} />
     </View>
   );
 };
@@ -22,7 +23,9 @@ const Home = ({navigation}) => {
 const styles = StyleSheet.create({
   homePage: {
     flex: 1,
-    justifyContent: 'center',
+    // paddingTop: 40,
+    // justifyContent: 'center',
+    backgroundColor: 'red',
     alignItems: 'center',
   }
 });

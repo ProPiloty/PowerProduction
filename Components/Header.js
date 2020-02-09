@@ -17,6 +17,7 @@ const Header = ({navigation}) => {
 
 const styles = StyleSheet.create({
   header: {
+    paddingTop: 40,
     alignItems: 'center',
     justifyContent: 'center',
   },

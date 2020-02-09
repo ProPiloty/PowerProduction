@@ -9,25 +9,33 @@ import {
 
 import Header from '../Components/Header';
 
-const Auth = ({navigation}) => {
+const Register = ({navigation}) => {
+
+  const registerUser = () => {
+    return navigation.navigate('Dashboard');
+  }
+
   return (
-    <View style={styles.auth} >
+    <View style={styles.register} >
       <Header />
-      <Text>Login</Text>
+      <Text>Register</Text>
       <TextInput placeholder="Username/Email" />
       <TextInput placeholder="Password" />
-      <Button title="Log In" onPress={() => navigation.navigate('Dashboard')} />
+      <TextInput placeholder="Password" />
+      <Button title="Register" onPress={registerUser()} />
+      <Button title="Login" onPress={() => navigation.navigate('Login')} />
       <Button title="Go to Home" onPress={() => navigation.navigate('Home')} />
     </View>
   );
 };
 
 const styles = StyleSheet.create({
-  auth: {
+  register: {
     flex: 1,
+    // paddingTop: 40,
+    // justifyContent: 'center',
     alignItems: 'center',
-    justifyContent: 'center',
   }
 });
 
-export default Auth;
+export default Register;

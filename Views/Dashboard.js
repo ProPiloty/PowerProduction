@@ -18,8 +18,9 @@ const Dashboard = ({navigation}) => {
 const styles = StyleSheet.create({
   dashboard: {
     flex: 1,
+    paddingTop: 40,
+    // justifyContent: 'center',
     alignItems: 'center',
-    justifyContent: 'center',
   }
 });
 
