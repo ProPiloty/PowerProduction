@@ -12,8 +12,9 @@ import {
   StatusBar,
 } from 'react-native';
 
-import Home from './Components/Home';
-import Auth from './Components/Auth';
+import Home from './Views/Home';
+import Auth from './Views/Auth';
+import Dashboard from './Views/Dashboard';
 
 const Stack = createStackNavigator();
 
@@ -23,6 +24,7 @@ const App = () => {
       <Stack.Navigator headerMode="none" >
         <Stack.Screen name="Home" component={Home} />
         <Stack.Screen name="Auth" component={Auth} />
+        <Stack.Screen name="Dashboard" component={Dashboard} />
       </Stack.Navigator>
     </NavigationContainer>
   );
