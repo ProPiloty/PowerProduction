@@ -23,8 +23,6 @@ const Home = ({navigation}) => {
 const styles = StyleSheet.create({
   homePage: {
     flex: 1,
-    // paddingTop: 40,
-    // justifyContent: 'center',
     backgroundColor: 'red',
     alignItems: 'center',
   }

@@ -29,8 +29,6 @@ const Login = ({navigation}) => {
 const styles = StyleSheet.create({
   login: {
     flex: 1,
-    // paddingTop: 40,
-    // justifyContent: 'center',
     alignItems: 'center',
   }
 });

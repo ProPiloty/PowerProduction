@@ -29,8 +29,6 @@ const Register = ({navigation}) => {
 const styles = StyleSheet.create({
   register: {
     flex: 1,
-    // paddingTop: 40,
-    // justifyContent: 'center',
     alignItems: 'center',
   }
 });
