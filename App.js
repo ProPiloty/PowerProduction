@@ -2,7 +2,7 @@ import React from 'react';
 import 'react-native-gesture-handler';
 import {NavigationContainer} from '@react-navigation/native';
 
-import Router from './Router';
+import StackNav from './Components/StackNav';
 
 import {
   SafeAreaView,
@@ -16,7 +16,7 @@ import {
 const App = () => {
   return (
     <NavigationContainer >
-      <Router />
+      <StackNav />
     </NavigationContainer>
   );
 };

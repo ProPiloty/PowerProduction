@@ -6,11 +6,14 @@ import {
   Text,
 } from 'react-native';
 
+// import LeftDrawerNav from '../Components/LeftDrawerNav';
+
 const Dashboard = ({navigation}) => {
   return (
     <View style={styles.dashboard}>
       <Text>Dashboard</Text>
       <Button title="Go home" onPress={() => navigation.navigate('Home')} />
+      {/* <LeftDrawerNav /> */}
     </View>
   )
 }
