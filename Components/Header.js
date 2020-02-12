@@ -10,6 +10,7 @@ import {
 const Header = ({navigation}) => {
   return (
     <View style={styles.header} >
+      <StatusBar barStyle="dark-content" backgroundColor="#6a51ae" style={styles.statusBar} />
       <Text>PowerProduction</Text>
     </View>
   );
@@ -21,6 +22,9 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
   },
+  statusBar: {
+    height: 40,
+  }
 });
 
 export default Header;
