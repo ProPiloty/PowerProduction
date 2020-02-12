@@ -12,6 +12,7 @@ const Dashboard = ({navigation}) => {
   return (
     <View style={styles.dashboard}>
       <Text>Dashboard</Text>
+      <Button title="Toggle Nav" onPress={() => navigation.toggleDrawer()} />
       <Button title="Go home" onPress={() => navigation.navigate('Home')} />
       {/* <LeftDrawerNav /> */}
     </View>
